@@ -7,16 +7,17 @@
     bats-most.url = "github:shell-lib/bats-most-flake";
     bats-detik.url = "github:shell-lib/bats-detik-flake";
   };
-  outputs = { self, nixpkgs, flake-utils, ... };
+  outputs = { self, nixpkgs, flake-utils, bats-most, bats-detik, ... }:
     flake-utils.lib.eachDefaultSystem (system:
     let
       pkgs = import nixpkgs {inherit system; };
-      bats-full = pkgs.symlinkJoin {
+    in rec {
+      packages.default = pkgs.symlinkJoin {
         name = "bats-full";
         paths = [
-          bats-most.defaultPackage.${system}
-          bats-detik.defaultPackage.${system}
+          bats-most.packages.${system}.default
+          bats-detik.packages.${system}.default
         ];
-      packages = {default = bats-full;};
-      });
+      };
+    });
 }
