@@ -2,8 +2,8 @@
   "nodes": {
     "bats-assert": {
       "inputs": {
-        "flake-utils": "flake-utils_2",
-        "nixpkgs": "nixpkgs_2"
+        "flake-utils": "flake-utils",
+        "nixpkgs": "nixpkgs"
       },
       "locked": {
         "lastModified": 1662474341,
@@ -21,8 +21,8 @@
     },
     "bats-core": {
       "inputs": {
-        "flake-utils": "flake-utils_3",
-        "nixpkgs": "nixpkgs_3"
+        "flake-utils": "flake-utils_2",
+        "nixpkgs": "nixpkgs_2"
       },
       "locked": {
         "lastModified": 1661560758,
@@ -38,29 +38,10 @@
         "type": "github"
       }
     },
-    "bats-detik": {
-      "inputs": {
-        "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs"
-      },
-      "locked": {
-        "lastModified": 1661560870,
-        "narHash": "sha256-iJMTnpyauiNoRIsUZ8IXs1caWwTyYoIKYATTXycpcuU=",
-        "owner": "shell-lib",
-        "repo": "bats-detik-flake",
-        "rev": "3744c62d44f5f3e6d2d280f6611a79eb9a3a6acf",
-        "type": "github"
-      },
-      "original": {
-        "owner": "shell-lib",
-        "repo": "bats-detik-flake",
-        "type": "github"
-      }
-    },
     "bats-file": {
       "inputs": {
-        "flake-utils": "flake-utils_4",
-        "nixpkgs": "nixpkgs_4"
+        "flake-utils": "flake-utils_3",
+        "nixpkgs": "nixpkgs_3"
       },
       "locked": {
         "lastModified": 1662474350,
@@ -76,33 +57,10 @@
         "type": "github"
       }
     },
-    "bats-most": {
-      "inputs": {
-        "bats-assert": "bats-assert",
-        "bats-core": "bats-core",
-        "bats-file": "bats-file",
-        "bats-support": "bats-support",
-        "flake-utils": "flake-utils_6",
-        "nixpkgs": "nixpkgs_6"
-      },
-      "locked": {
-        "lastModified": 1662474457,
-        "narHash": "sha256-JCpgGXyP/dvpjjPrNJDHxxvgCpErl4tVql6veC4zmOE=",
-        "owner": "shell-lib",
-        "repo": "bats-most-flake",
-        "rev": "6d73c6595781640b39e566f03d0e05c32dee1ec0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "shell-lib",
-        "repo": "bats-most-flake",
-        "type": "github"
-      }
-    },
     "bats-support": {
       "inputs": {
-        "flake-utils": "flake-utils_5",
-        "nixpkgs": "nixpkgs_5"
+        "flake-utils": "flake-utils_4",
+        "nixpkgs": "nixpkgs_4"
       },
       "locked": {
         "lastModified": 1662474336,
@@ -193,36 +151,6 @@
         "type": "github"
       }
     },
-    "flake-utils_6": {
-      "locked": {
-        "lastModified": 1659877975,
-        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
-    "flake-utils_7": {
-      "locked": {
-        "lastModified": 1659877975,
-        "narHash": "sha256-zllb8aq3YO3h8B/U0/J1WBgAL8EX5yWf5pMj3G0NAmc=",
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "rev": "c0e246b9b83f637f4681389ecabcb2681b4f3af0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "numtide",
-        "repo": "flake-utils",
-        "type": "github"
-      }
-    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1661361016,
@@ -289,38 +217,6 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1661361016,
-        "narHash": "sha256-Bjf6ZDnDc6glTwIIItvwfcaeJ5zWFM6GYfPajSArdUY=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "b784c5ae63dd288375af1b4d37b8a27dd8061887",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_6": {
-      "locked": {
-        "lastModified": 1662019588,
-        "narHash": "sha256-oPEjHKGGVbBXqwwL+UjsveJzghWiWV0n9ogo1X6l4cw=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "2da64a81275b68fdad38af669afeda43d401e94b",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_7": {
-      "locked": {
         "lastModified": 1662019588,
         "narHash": "sha256-oPEjHKGGVbBXqwwL+UjsveJzghWiWV0n9ogo1X6l4cw=",
         "owner": "nixos",
@@ -337,10 +233,12 @@
     },
     "root": {
       "inputs": {
-        "bats-detik": "bats-detik",
-        "bats-most": "bats-most",
-        "flake-utils": "flake-utils_7",
-        "nixpkgs": "nixpkgs_7"
+        "bats-assert": "bats-assert",
+        "bats-core": "bats-core",
+        "bats-file": "bats-file",
+        "bats-support": "bats-support",
+        "flake-utils": "flake-utils_5",
+        "nixpkgs": "nixpkgs_5"
       }
     }
   },

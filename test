@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+BATS="${PWD}/result/bin/bats"
+WORKING_DIR="$(mktemp --directory)"
+TEST_FILE="${WORKING_DIR}/test.bats"
+
+function cleanup {      
+  rm -rf "$WORKING_DIR"
+}
+
+# register the cleanup function to be called on the EXIT signal
+trap cleanup EXIT
+
+cat <<EOF > "${TEST_FILE}"
+#!/usr/bin/env bats
+setup() {
+  bats_load_library bats-assert.load.bash
+}
+
+@test "Test assert" {
+  assert true
+}
+
+@test "Test refute" {
+  refute false
+}
+EOF
+
+echo "Running bats"
+"${BATS}" "${TEST_FILE}"
+
